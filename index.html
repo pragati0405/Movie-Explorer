@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Explorer</title>
+</head>
+<body>
+    <!-- search box -->
+    <div class="container">
+        <h1>🎬Movie Explorer</h1>
+        <input type="text" id="searchInput" placeholder="Search for a movie...">
+        <button id="searchButton">Search</button>
+        <div id="movieList"></div>
+    </div>
+
+
+    <!--main content -->
+<div class="main_box">
+  
+        <!-- movie details -->
+    <div class="movie_details">
+        
+                <div id="trendingSection">
+                    <h2 style="color: white; margin-bottom: 20px;">🔥 Trending Now</h2>
+                    <div class="movie-grid" id="trendingMoviesList">
+                           
+                </div>
+
+                <div id="searchSection" style="display: none;">
+                    <h2 style="color: white; margin-bottom: 20px;">🔎 Search Results</h2>
+                    <div class="movie-grid" id="searchResultsList">
+                          
+                        </div>
+                </div>
+
+            
+                </div>
+    </div>
+
+            <!--right content -->
+            <div class="content">
+                    <div class="Favourites">
+                        <h3>❤️ Favorites <span class="count">(3)</span></h3>
+                        <ul class="fav-list">
+                        <li>Avengers</li>
+                        <li>Batman</li>
+                        <li>Interstellar</li>
+                        </ul>
+                    </div>
+
+                    <div class="Searches">
+                        <h3>🕒 Recent Searches</h3>
+                        <ul class="search-list">
+                        <li>Iron Man</li>
+                        <li>Joker</li>
+                        <li>Avatar</li>
+                        </ul>
+                        <button class="clear-btn">Clear History</button>
+                    </div>
+            </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
